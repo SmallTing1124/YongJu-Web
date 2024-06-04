@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <title>永琚建設機構</title>
-    <?php include("head.php"); ?>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.min.js"></script>
     <!-- slick -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./js/ajax.js"></script>
 </head>
 
 <body>
-    <?php include("header.php"); ?>
     <section class="bannerArea">
         <div class="fadeSlick">
-        <div class="innerImg">
-                <div class="image"
-                    style="background-image: url(./images/banner/home-bg.png);">
+            <div class="innerImg">
+                <div class="image" style="background-image: url(./images/banner/home-bg.png);">
                 </div>
             </div>
             <div class="innerImg">
@@ -60,7 +66,7 @@
                                 <span>每一個細節都經過嚴格把控。</span>
                             </p>
                         </div>
-                        <a href="about.php" class="btn btn-more"><b>觀看更多</b><span class="read_more_circle"></span></a>
+                        <a href="about.html" class="btn btn-more"><b>觀看更多</b><span class="read_more_circle"></span></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -82,22 +88,38 @@
             </div>
         </div>
     </section>
-    <section class="UnitPage newsArea">
+    <section class="newsArea">
         <div class="container-fluid">
-            <div class="row  justify-content-end">
+            <div class="row  justify-content-center">
                 <div class="col-12">
                     <h2 class="UnitTitle">
                         <span>Latest News</span>
                     </h2>
                 </div>
-                <div class="col-lg-10 newsBox">
+                <div class="col-lg-8 newsBox">
                     <h3 class="subtitle">
                         <b>最新消息</b>
                         <small>洞察市場動態，掌握行業先機。</small>
                     </h3>
                     <div class="row NewsList">
                         <div class="col-md-6 item">
-                            <a href="news-in.php">
+                            <a href="news-in.html">
+                                <div class="Img">
+                                    <div class="innerImg">
+                                        <div class="image"
+                                            style="background-image: url(https://images.unsplash.com/photo-1710438399463-e7b374c2db9e?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Txt">
+                                    <h5 class="title">完成大型商業綜合體項目，助力城市繁榮</h5>
+                                    <p>該商業綜合體涵蓋了辦公樓、購物中心、住宅區，總建築面積達到50萬平方米。項目自動工以來，我們投入了大量資源和先進技術，確保每一個施工環節的質量和安全。項目如期完工並順利交付，受到客戶和當地政府的高度讚譽。
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 item">
+                            <a href="news-in.html">
                                 <div class="Img">
                                     <div class="innerImg">
                                         <div class="image"
@@ -114,7 +136,7 @@
                         </div>
                     </div>
                     <hr>
-                    <a href="news.php" class="btn btn-more"><b>觀看更多</b><span class="read_more_circle"></span></a>
+                    <a href="news.html" class="btn btn-more"><b>觀看更多</b><span class="read_more_circle"></span></a>
                 </div>
             </div>
         </div>
@@ -122,17 +144,16 @@
     <section class="UnitPage caseArea">
         <div class="container-fluid">
             <div class="row">
-               
                 <div class="col-12 caseBox pt-5">
                     <h3 class="subtitle">
                         <b>經典個案</b>
                         <small>卓越工程範例，見證品質與創新的完美結合</small>
                     </h3>
-                    <a href="work.php" class="btn btn-more">
+                    <a href="work.html" class="btn btn-more">
                         <b>觀看更多</b><span class="read_more_circle"></span>
                     </a>
                     <div class="caseList cardSlick">
-                        <a class="item" href="case-in.php">
+                        <a class="item" href="case-in.html">
                             <div class="Img">
                                 <div class="innerImg">
                                     <div class="image" style="background-image: url(images/case/case-deom-1.jpg);">
@@ -145,7 +166,7 @@
                             </div>
                         </a>
                         <!-- item -->
-                        <a class="item" href="case-in.php">
+                        <a class="item" href="case-in.html">
                             <div class="Img">
                                 <div class="innerImg">
                                     <div class="image" style="background-image: url(images/case/case-deom-2.jpg);">
@@ -158,7 +179,7 @@
                             </div>
                         </a>
                         <!-- item -->
-                        <a class="item" href="case-in.php">
+                        <a class="item" href="case-in.html">
                             <div class="Img">
                                 <div class="innerImg">
                                     <div class="image" style="background-image: url(images/case/case-deom-3.jpg);">
@@ -177,7 +198,83 @@
             </div>
         </div>
     </section>
-    <?php include("footer.php"); ?>
+    <header>
+        <nav class="haeder-nav">
+            <a class="navbar-brand" href="index.html"><span>永琚建設機構</span></a>
+            <ul class="menuList d-none d-lg-flex">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">認識永琚</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="case.html">熱銷個案</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="work.html">經典個案</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">最新消息</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">聯絡我們</a>
+                </li>
+            </ul>
+            <button class="navbar-toggler"></button>
+        </nav>
+    </header>
+    <section class="menuArea">
+        <div class="menu-close"></div>
+        <ul class="menuList">
+            <li class="nav-item">
+                <a class="nav-link " href="about.html"><span class="underline">認識永琚</span> <small>ABOUT</small></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="case.html"><span class="underline">熱銷個案</span><small>CASE</small></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="work.html"><span class="underline">經典個案</span><small>WORK</small></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="news.html"><span class="underline">最新消息</span><small>NEWS</small></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="contact.html"><span class="underline">聯絡我們</span><small>Contact</small></a>
+            </li>
+        </ul>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="index.html">
+                            <h2 class="companyName">
+                                永琚建設機構
+                                <small>Yong Ju Group co. ltd</small>
+                            </h2>
+                        </a>
+                        <hr>
+                    </div>
+                    <div class="col-lg-4">
+                        <address>
+                            <span>
+                                32041 <br>
+                                桃園市中壢區中正路82號6樓
+                            </span>
+                            <small>
+                                6F., No.82, Zhongzheng Rd. <br>
+                                Zhongli Dist., Taoyuan City 320001 <br>
+                                Taiwan (R.O.C.)
+                            </small>
+                        </address>
+                    </div>
+                    <div class="col-lg-4">
+                        TEL ： 0800-888-888 <br>
+                        FAX ： 0800-888-888
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <div class="footer"></div>
+    <script src="js/navbar.js"></script>
     <script src="js/home.js"></script>
 </body>
 

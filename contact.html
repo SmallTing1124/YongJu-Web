@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>聯絡我們｜永琚建設機構</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./js/ajax.js"></script>
+</head>
+
+<body>
+    <div class="bannerBox" style="background-image: url(./images/banner/contact-bg.png);">
+        <h2 class="UnitTitle text-center">
+            <span>Contact Us</span>
+        </h2>
+    </div>
+    <section class="UnitPage contactArea mt-5">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-lg-6">
+                    <h3 class="subtitle mb-5">
+                        <b>聯絡我們</b>
+                        <small>建築不是硬體，它是你的另一個身體</small>
+                    </h3>
+                    <form id="form1" class="mb-5 " name="form1" method="post" action="admins/contactemailgo.php">
+                        <div class="form-group row mb-3 " >
+                            <div class="col-4">
+                                <label class="col-form-label ">聯絡姓名</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="col-4">
+                                <label class="col-form-label ">聯絡電話</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="col-4">
+                                <label class="col-form-label ">電子郵件</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="col-4">
+                                <label class="col-form-label ">聯絡主旨</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="col-4">
+                                <label class="col-form-label ">留言訊息</label>
+                            </div>
+                            <div class="col-8">
+                                <textarea type="text" cols="100" rows="6" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3">
+                            <div class="d-grid">
+                                <input type="submit" value="送出" class="btn btn-dark btn-block">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-5">
+                    <p>
+                        如有任何問題或疑慮，請隨時與我們聯繫。<br>
+                        確認您的詢問後，我們將與負責人聯繫。
+                    </p>
+                    <hr>
+                    <ul class="ContactInfo">
+                        <li><b>服務時間</b>週一至週五<br>上午 8:00~12:00 <br>下午 13:30~17:30</li>
+                        <li><b>聯絡電話</b>0800-888-888</li>
+                        <li><b>傳真電話</b>0800-888-888</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <header>
+        <nav class="haeder-nav">
+            <a class="navbar-brand" href="index.html"><span>永琚建設機構</span></a>
+            <ul class="menuList d-none d-lg-flex">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">認識永琚</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="case.html">熱銷個案</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="work.html">經典個案</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">最新消息</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">聯絡我們</a>
+                </li>
+            </ul>
+            <button class="navbar-toggler"></button>
+        </nav>
+    </header>
+    <section class="menuArea">
+        <div class="menu-close"></div>
+        <ul class="menuList">
+            <li class="nav-item">
+                <a class="nav-link " href="about.html"><span class="underline">認識永琚</span> <small>ABOUT</small></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="case.html"><span class="underline">熱銷個案</span><small>CASE</small></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="work.html"><span class="underline">經典個案</span><small>WORK</small></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="news.html"><span class="underline">最新消息</span><small>NEWS</small></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="contact.html"><span class="underline">聯絡我們</span><small>Contact</small></a>
+            </li>
+        </ul>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="index.html">
+                            <h2 class="companyName">
+                                永琚建設機構
+                                <small>Yong Ju Group co. ltd</small>
+                            </h2>
+                        </a>
+                        <hr>
+                    </div>
+                    <div class="col-lg-4">
+                        <address>
+                            <span>
+                                32041 <br>
+                                桃園市中壢區中正路82號6樓
+                            </span>
+                            <small>
+                                6F., No.82, Zhongzheng Rd. <br>
+                                Zhongli Dist., Taoyuan City 320001 <br>
+                                Taiwan (R.O.C.)
+                            </small>
+                        </address>
+                    </div>
+                    <div class="col-lg-4">
+                        TEL ： 0800-888-888 <br>
+                        FAX ： 0800-888-888
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <div class="footer"></div>
+    <script src="js/navbar.js"></script>
+    <script>
+        $(".haeder-nav  .menuList .nav-item:nth-child(5)").addClass("active");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+/*共用樣式:文字排版相關的樣式規則*/
+
+.UnitPage {
+    padding: 3vw 15vw;
+    overflow: hidden;
+
+    @media(max-width: 991px) {
+        padding: 3vw 15px;
+    }
+}
+
+
+.UnitTitle {
+    font-family: 'Times New Roman';
+    color: #fff;
+    font-size: 10rem;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+
+    @media(max-width: 991px) {
+        font-size: 6rem;
+    }
+    @media (max-width: 480px) {
+        font-size: 3.5rem;
+    }
+
+    span {
+        display: block;
+        transform: translateY(3.5rem);
+        white-space: nowrap;
+
+        @media(max-width: 991px) {
+            transform: translateY(2rem);
+        }
+        @media (max-width: 480px) {
+            transform: translateY(1rem);
+        }
+    }
+}
+
+
+
+.subtitle {
+    b {
+        font-family: 'Noto Serif TC', serif;
+
+    }
+
+    small {
+        font-size: 1rem;
+        font-weight: 100;
+
+        &:before {
+            content: "｜";
+        }
+
+        @media(max-width: 991px) {
+            display: block;
+            font-size: 14px;
+            margin-top: 10px;
+
+            &small:before {
+                display: none
+            }
+        }
+
+    }
+}
+
+
+
+.Txt {
+    .titleBox {
+        font-family: 'Noto Serif TC', serif;
+        margin-bottom: 2rem;
+        @media (max-width: 480px) {
+            font-size: 1.8rem;
+        }
+    }
+
+    .text p span {
+        @media (min-width:991px) {
+            display: block;
+        }
+    }
+}
+
+
+
+
+.underline {
+    &:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #333;
+    }
+
+    &:hover:after {
+        animation: underline 1s both;
+    }
+}
+
+@keyframes underline {
+    0% {
+        left: 0;
+    }
+
+    49% {
+        left: 100%;
+        width: 0;
+    }
+
+    50% {
+        left: 0;
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

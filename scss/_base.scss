@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans+TC:wght@100;400&display=Noto+Serif+TC:wght@600;700&=swap');
+
+/*
+
+黑體
+font-family: 'Noto Sans TC', sans-serif;
+
+明體
+font-family: 'Noto Serif TC', serif;
+
+英文 無襯
+font-family: 'Montserrat', sans-serif;
+
+英文 襯線
+font-family: 'Times New Roman', sans-serif;
+
+*/
+* {
+    position: relative;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+}
+
+body {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/*文字樣式*/
+a {
+    color: #333;
+
+    &:hover {
+        color: #0a3835;
+        text-decoration: none;
+    }
+
+    &:focus,
+    button:focus {
+        outline: none !important;
+    }
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.fancybox-navigation {
+    height: 100vh;
+}
+
+/*圖片樣式*/
+.innerImg {
+    width: 100%;
+    padding-top: 70%;
+}
+
+.innerImg .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #cccccc;
+    background-image: url(../images/cs.svg);
+}
+
+

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+
+
+
+
+.caseinfo {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 10px 0;
+    border-top: 1px solid #bfbfbf;
+
+    /*border-bottom: 1px solid #bfbfbf;*/
+    li {
+        padding-left: 4.5rem;
+        line-height: 2;
+
+        span {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+}
+
+// .text {
+//     border-top: 1px solid #bfbfbf;
+//     margin-top: 1rem;
+//     padding: 10px 0;
+// }
