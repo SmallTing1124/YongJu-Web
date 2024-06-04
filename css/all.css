@@ -320,12 +320,6 @@ a button:focus {
   margin-top: 5%;
 }
 
-.menuList {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .haeder-nav {
   position: fixed;
   z-index: 9999;
@@ -336,6 +330,30 @@ a button:focus {
   display: flex;
   justify-content: center;
   background-color: #fff;
+  border-bottom: 1px solid #f5f5f5 !important;
+}
+@media (max-width: 991px) {
+  .haeder-nav {
+    padding-left: 20px;
+    justify-content: flex-start;
+  }
+}
+.haeder-nav.active {
+  background-color: #fff;
+  border-bottom: 1px solid #f5f5f5 !important;
+}
+.haeder-nav.active:after {
+  content: "";
+  bottom: -20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #03554F;
+}
+.haeder-nav.active .navbar-brand {
+  opacity: 1 !important;
+  transition: all 1s;
 }
 .haeder-nav .navbar-brand {
   position: absolute;
@@ -349,8 +367,19 @@ a button:focus {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (max-width: 991px) {
+  .haeder-nav .navbar-brand {
+    position: relative;
+    width: 50vw;
+    padding-top: 6%;
+    background-position: left;
+    opacity: 1;
+    transition: all 1s;
+  }
+}
 .haeder-nav .navbar-brand span {
-  display: none;
+  opacity: 0;
+  position: absolute;
 }
 .haeder-nav .navbar-toggler {
   position: absolute;
@@ -361,6 +390,11 @@ a button:focus {
   background-color: #03554F;
   border-radius: 0;
   z-index: 9999;
+}
+@media (max-width: 991px) {
+  .haeder-nav .navbar-toggler {
+    width: 20vw;
+  }
 }
 .haeder-nav .navbar-toggler:before, .haeder-nav .navbar-toggler:after {
   content: "";
@@ -398,8 +432,10 @@ a button:focus {
   transform: translateY(-50%);
   background-color: #e8e6e6;
 }
+.haeder-nav .menuList .nav-item.active .nav-link {
+  color: #03554F;
+}
 
-/*menuArea*/
 .menuArea {
   width: 100%;
   min-height: 100vh;
@@ -418,14 +454,12 @@ a button:focus {
   z-index: -1;
   transition: all 1s;
 }
-
 .menuArea.open {
   opacity: 1;
   transform: translateY(0%);
   z-index: 99999;
   transition: all 1s;
 }
-
 .menuArea .menu-close {
   position: fixed;
   top: 3vw;
@@ -437,9 +471,7 @@ a button:focus {
   z-index: 9999;
   transform-origin: center;
 }
-
-.menuArea .menu-close:before,
-.menuArea .menu-close:after {
+.menuArea .menu-close:before, .menuArea .menu-close:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -450,27 +482,30 @@ a button:focus {
   height: 1px;
   background-color: #333;
 }
-
 .menuArea .menu-close:before {
   transform: rotate(45deg) translate(-50%, -50%);
 }
-
 .menuArea .menu-close:after {
   transform: rotate(-45deg) translate(-50%, -50%);
 }
-
 .menuArea .menuList {
   width: 50vw;
   display: flex;
   flex-wrap: wrap;
   justify-self: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-.menuArea .menuList li {
+@media (max-width: 991px) {
+  .menuArea .menuList {
+    width: 100%;
+  }
+}
+.menuArea .menuList .nav-item {
   width: 50%;
 }
-
-.menuArea .menuList li .nav-link {
+.menuArea .menuList .nav-item .nav-link {
   display: block;
   font-size: 1.5rem;
   color: #333;
@@ -479,92 +514,44 @@ a button:focus {
   padding-bottom: 10px;
   text-align: right;
 }
-
-.menuArea .menuList li .nav-link:hover {
+@media (max-width: 991px) {
+  .menuArea .menuList .nav-item .nav-link {
+    text-align: left;
+  }
+}
+@media (max-width: 480px) {
+  .menuArea .menuList .nav-item .nav-link {
+    font-size: 1.2rem;
+  }
+}
+.menuArea .menuList .nav-item .nav-link:hover {
   color: #333 !important;
 }
-
-.nav-item:hiver .underline:after {
-  animation: underline 1s both;
-}
-
-.menuArea .menuList li .nav-link small {
+.menuArea .menuList .nav-item .nav-link small {
   display: block;
   text-transform: uppercase;
   opacity: 0.3;
   line-height: 1;
   font-size: 14px;
 }
-
+@media (max-width: 480px) {
+  .menuArea .menuList .nav-item .nav-link small {
+    font-size: 10px;
+  }
+}
+.menuArea .menuList .nav-item:hover .underline:after {
+  animation: underline 1s both;
+}
 .menuArea footer {
   width: 100%;
   background-color: transparent;
   padding: 0;
   padding-top: 5vw;
 }
-
 @media (max-width: 991px) {
-  .haeder-nav {
-    padding-left: 20px;
-    justify-content: flex-start;
-  }
-  .navbar-toggler {
-    width: 20vw;
-  }
-  .haeder-nav .navbar-brand {
-    position: relative;
-    width: 50vw;
-    padding-top: 3%;
-    background-position: left;
-    opacity: 1;
-    transition: all 1s;
-  }
-  .haeder-nav.active .navbar-brand {
-    /* opacity: 0; */
-    transition: all 1s;
-  }
-  .menuArea .menuList {
-    width: 100%;
-  }
-  .menuArea .menuList li .nav-link {
-    text-align: left;
-  }
   .menuArea footer {
     padding-top: 15vw;
   }
-  .menuArea footer:after {
-    display: none;
-  }
-}
-@media (max-width: 480px) {
-  .menuArea .menuList li .nav-link {
-    font-size: 1.2rem;
-  }
-  .menuArea .menuList li .nav-link small {
-    font-size: 10px;
-  }
-}
-.haeder-nav {
-  border-bottom: 1px solid #f5f5f5 !important;
-}
-.haeder-nav.active {
-  background-color: #fff;
-  border-bottom: 1px solid #f5f5f5 !important;
-}
-.haeder-nav.active .navbar-brand {
-  opacity: 1 !important;
-}
-.haeder-nav.active:after {
-  content: "";
-  bottom: -20px;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #03554F;
-}
-.haeder-nav .menuList .nav-item.active .nav-link {
-  color: #03554F;
 }
 
 .bannerBox {
@@ -631,8 +618,8 @@ footer .companyName {
 }
 @media (max-width: 991px) {
   footer .companyName {
-    width: 35%;
-    padding-top: 8%;
+    width: 70%;
+    padding-top: 7%;
     margin-bottom: 2rem;
   }
 }
@@ -647,6 +634,8 @@ footer address small {
 footer .menuList {
   display: flex;
   margin-top: 3rem;
+  list-style: none;
+  padding: 0;
 }
 @media (max-width: 991px) {
   footer .menuList {
@@ -684,6 +673,10 @@ footer .menuList li + li:before {
   padding-top: 70% !important;
 }
 
+.bannerArea h1 {
+  opacity: 0;
+  position: absolute;
+}
 @media (max-width: 991px) {
   .bannerArea {
     margin-top: 58px;
@@ -761,6 +754,7 @@ footer .menuList li + li:before {
   display: inline-block;
   overflow: hidden;
   padding-bottom: 3px;
+  font-size: 1.2rem;
 }
 .newsArea .newsBox .NewsList .item a .Txt .title:after {
   content: "";
