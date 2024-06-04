@@ -204,16 +204,9 @@
     padding: 10px;
     color: #333;
 
-    @media (max-width: 480px) {
-      opacity: 0.5;
-    }
-
     .Txt {
       padding: 10px 0;
 
-      @media (max-width: 480px) {
-        opacity: 0
-      }
 
       small {
         display: block;
@@ -261,7 +254,6 @@
   }
 
   @media (max-width: 480px) {
-
     .slick-center .item,
     .slick-center .Txt {
       opacity: 1

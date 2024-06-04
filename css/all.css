@@ -30,6 +30,7 @@ body {
 /*文字樣式*/
 a {
   color: #333;
+  text-decoration: none;
 }
 a:hover {
   color: #0a3835;
@@ -568,7 +569,6 @@ a button:focus {
 
 .bannerBox {
   min-height: 50vh;
-  padding: 3vw 15vw;
 }
 @media (min-width: 991px) {
   .bannerBox {
@@ -583,13 +583,20 @@ a button:focus {
 }
 .bannerBox .UnitTitle {
   position: absolute;
-  bottom: -1px;
+  bottom: 0;
   margin-bottom: 0;
+  width: 100%;
+  display: flex;
+  line-height: 1;
+  display: flex;
+  align-items: flex-end;
 }
-@media (min-width: 991px) {
-  .bannerBox .UnitTitle span {
-    top: 10px;
-  }
+.bannerBox .UnitTitle b {
+  opacity: 0;
+  position: absolute;
+}
+.bannerBox .UnitTitle span {
+  display: inline-block;
 }
 
 footer {
@@ -846,18 +853,8 @@ footer .menuList li + li:before {
   padding: 10px;
   color: #333;
 }
-@media (max-width: 480px) {
-  .caseList .item {
-    opacity: 0.5;
-  }
-}
 .caseList .item .Txt {
   padding: 10px 0;
-}
-@media (max-width: 480px) {
-  .caseList .item .Txt {
-    opacity: 0;
-  }
 }
 .caseList .item .Txt small {
   display: block;
