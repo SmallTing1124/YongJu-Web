@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.caseName small {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 9px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.caseName b {
+    display: block;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+
+ul.caseinfo {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 10px 0;
+    border-top: 1px solid #bfbfbf;
+    /*border-bottom: 1px solid #bfbfbf;*/
+}
+
+ul.caseinfo li {
+    padding-left: 4.5rem;
+    line-height: 2;
+
+}
+
+
+ul.caseinfo li span {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+ul.caseinfo p {
+
+    line-height: 1.5;
+
+}
+
+.text {
+    border-top: 1px solid #bfbfbf;
+    /*border-bottom: 1px solid #bfbfbf;*/
+    margin-top: 1rem;
+    padding: 10px 0;
+}
+
+

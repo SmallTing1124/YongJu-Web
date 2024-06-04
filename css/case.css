@@ -1,0 +1,184 @@
+/*caseArea*/
+.UnitTitle {
+    border-color: #f5f5f5;
+}
+
+.UnitTitle span {
+    color: #f5f5f5;
+}
+
+.caseArea .subtitle {
+    margin-bottom: 1rem;
+}
+
+
+
+.caseArea .caseBox .subtitle b {
+    display: block;
+}
+
+
+
+/*CategoryList*/
+
+
+.CategoryBox {
+    padding-top: 5%;
+}
+.CategoryList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-bottom: 2rem;
+
+    /*border-bottom: 3px solid #dfdfdf;*/
+}
+
+.CategoryList li a {
+    color: #666;
+    font-size: 1rem;
+    transition: all 0.5s;
+    display: inline-block;
+    margin-bottom: 1rem;
+
+
+}
+
+.CategoryList li a:after,
+.CategoryList li a.active:after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: #999;
+    transition: all 0.5s;
+}
+
+.CategoryList li a.active {
+    color: #333;
+    border-bottom: 3px solid #999;
+}
+
+.CategoryList li a:hover:after {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+
+
+
+.CategoryBox .title small {
+    font-size: 10px;
+    color: #929292;
+    text-transform: uppercase;
+    display: block;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 5px;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.caseArea .caseBox{
+    border-left: 1px solid #f5f5f5;
+    padding-top: 5%;
+    padding-left: 3%;
+}
+
+
+
+
+
+
+.caseArea .caseBox .caseList {
+    margin: 0 -10px;
+    display: flex;
+}
+
+.caseArea .caseBox .caseList .item {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    color: #333;
+}
+
+.caseArea .caseBox .caseList .item .Txt {
+    padding: 10px 0;
+}
+
+.caseArea .caseBox .caseList .item .Txt small {
+    display: block;
+}
+
+.caseArea .caseBox .caseList .item .Txt .caseName {
+    display: inline-block;
+    padding: 10px 0 5px;
+}
+
+.caseArea .caseBox .caseList .item .innerImg {
+    padding-top: 132%;
+    overflow: hidden;
+}
+
+.caseArea .caseBox .caseList .item .image {
+    transform: scale(1.0);
+    transition: all 1s;
+}
+
+.caseArea .caseBox .caseList .item:hover .image {
+    transform: scale(1.1);
+    transition: all 1s;
+
+}
+
+
+
+
+
+.caseArea .caseBox .caseList .item .Txt .caseName:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+}
+
+.caseArea .caseBox .caseList .item:hover .Txt .caseName:after {
+    animation: underline 1s both;
+}
+
+
+
+
+@media(max-width: 991px) {
+    .CategoryList {
+        display: flex;
+    }
+    .CategoryList li{
+        width: 50%;
+        text-align: center;
+    }
+    .CategoryList li a {
+        display: block;
+        color: #eee;
+        padding: 10px 0;
+        border: 1px  solid #eee;
+    }
+    .CategoryList li a.active{
+        background-color: #eee;
+        border: none;
+
+    }
+}

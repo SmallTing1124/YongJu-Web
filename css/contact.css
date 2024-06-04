@@ -1,0 +1,19 @@
+ @charset "UTF-8";
+
+
+  .ContactInfo{
+    margin: 0;
+    padding: 0;
+  }
+
+ .ContactInfo li b {
+     position: absolute;
+     left: 0;
+
+ }
+
+ .ContactInfo li {
+     list-style: none;
+     padding-left: 5rem;
+     margin-bottom: 10px;
+ }

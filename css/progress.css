@@ -1,0 +1,93 @@
+.caseList {
+    margin-top: 3%;
+}
+
+.caseList .item {
+    margin-bottom: 2.5rem;
+}
+
+.caseList .item a {
+    display: block;
+    color: #333;
+    border: 1px solid #eee;
+    background-color: #fff;
+    transition: all 0.5s;
+    transform: translateY(0%);
+
+}
+
+.caseList .item a:hover {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s;
+    transform: translateY(-5%);
+}
+
+.caseList .item .Img {
+    padding: 10px;
+}
+
+.caseList .item .Img .innerImg {
+    padding-top: 100%;
+}
+
+.caseList .item .Txt {
+    padding: 10px 0 1rem;
+    text-align: center;
+}
+
+.caseList .item .Txt small {
+    display: block;
+    margin-top: 5px;
+    line-height: 3;
+    opacity: 0.8;
+    border-top: 1px solid #eee;
+}
+
+
+
+
+.fancybox-content {
+    max-width: 100%;
+    width: 50vw;
+    text-align: center;
+}
+
+.fancybox-content input {
+    border-radius: 0px;
+}
+
+.fancybox-content .Txt {
+    margin-bottom: 2rem;
+}
+
+.fancybox-content .Txt .titleBox:after {
+    content: '';
+    width: 20px;
+    height: 3px;
+    display: block;
+    margin: 1rem auto;
+    background-color: #eee;
+}
+
+.fancybox-content .Txt .caseName {
+    margin: 0;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #c48d00;
+    border-color: #c48d00;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #9a6414;
+    border-color: #9a6414;
+}
+
+
+@media(max-width: 991px) {
+    .fancybox-content {
+        width: 80vw;
+    }
+}
